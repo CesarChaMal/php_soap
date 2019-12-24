@@ -8,9 +8,10 @@
 $sPais = "argentina"; // Nombre del pais que queremos el listado de localidades
 
 // Inclusion de la libreria nusoap (la que contendra toda la conexión con el servidor //
-require_once('lib/nusoap.php');
+require_once('nusoap/lib/nusoap.php');
 
-$oSoapClient = new soapclient('http://live.capescience.com/wsdl/GlobalWeather.wsdl', true);
+//$oSoapClient = new soapclient('http://live.capescience.com/wsdl/GlobalWeather.wsdl', true);
+$oSoapClient = new soapclient('GlobalWeather.wsdl', true);
 
 if ($sError = $oSoapClient->getError()) {
 	echo "No se pudo realizar la operación [" . $sError . "]";

@@ -5,14 +5,19 @@
 /tmp
 /out-tsc
 /out
+/out
 /build
 /classes
 /Debug
 /Release
 /x64
 /Bin
+/bin
+/gen
 /Obj
 /target
+/proguard
+
 
 # dependencies
 /node_modules
@@ -42,6 +47,7 @@
 npm-debug.log
 yarn-error.log
 testem.log
+local.properties
 /typings
 
 # System Files
